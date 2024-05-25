@@ -39,4 +39,16 @@ func main() {
 	fmt.Println("Enter the base and the power ... >")
 	fmt.Scan(&num, &index)
 	fmt.Printf("%d to the power %d is = %d", num, index, loops.Power(num, index))
+
+	fmt.Println("===\n\rGolang program to calculate the reverse of the given number using the for loop")
+	reverseCandidate := 245
+	fmt.Printf("The Reverse of the number %d is = %d\n", reverseCandidate, loops.Reverse(reverseCandidate))
+
+	fmt.Println("====\n\rGolang program to find the given number is palindrome or not using for loop")
+	palindromeCandidate := 11
+	if loops.IsPalindrome(palindromeCandidate) {
+		fmt.Printf("yes the number %d is palindrome\n", palindromeCandidate)
+	} else {
+		fmt.Printf("No,  the number %d is not palindrome\n", palindromeCandidate)
+	}
 }

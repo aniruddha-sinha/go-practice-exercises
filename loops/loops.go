@@ -39,3 +39,22 @@ func Power(num int, index int) int {
 	}
 	return res
 }
+
+func Reverse(num int) int {
+	var reverse, remainder int
+	for num != 0 {
+		remainder = num % 10
+		reverse = reverse*10 + remainder
+		num /= 10
+	}
+
+	return reverse
+}
+
+func IsPalindrome(num int) bool {
+	if Reverse(num) == num {
+		return true
+	} else {
+		return false
+	}
+}
