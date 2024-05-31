@@ -58,3 +58,30 @@ func IsPalindrome(num int) bool {
 		return false
 	}
 }
+
+func countDigits(num int) int {
+	count := 0
+	for num != 0 {
+		num /= 10
+		count++
+	}
+
+	return count
+}
+
+func IsArmstrong(num int) bool {
+	var sum int
+	tmp := num
+	numDigits := countDigits(num)
+	for i := 0; tmp != 0; i++ {
+		rem := tmp % 10
+		sum += Power(rem, numDigits)
+		tmp /= 10
+	}
+
+	if num == sum {
+		return true
+	} else {
+		return false
+	}
+}

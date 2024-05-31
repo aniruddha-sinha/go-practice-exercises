@@ -7,7 +7,7 @@ package main
 import (
 	"fmt"
 	"learn/loops"
-	"learn/utils"
+	//"learn/utils"
 )
 
 func main() {
@@ -15,30 +15,23 @@ func main() {
 	fmt.Println("Multiplication of 2 and 10 is ", loops.MultiplyByAddition(2, 10))
 
 	fmt.Println("===\n\rGolang program to print table of a given number using for loop")
-	var tableCandidate int
-	fmt.Println("Enter the number to print Table ")
-	fmt.Scan(&tableCandidate)
+	tableCandidate := 36
 	loops.PrintTable(tableCandidate)
 
 	fmt.Println("===\n\rGolang program to print the tables up to given number using for loop")
-	var tableRangeCandidate int
-	fmt.Scan(&tableRangeCandidate)
+	tableRangeCandidate := 3
 	loops.PrintTablesUpto(tableRangeCandidate)
 
-	fmt.Println("Clearing Screen in 5 seconds")
-	utils.ClearScreen()
+	//fmt.Println("Clearing Screen in 5 seconds")
+	//utils.ClearScreen()
 
 	fmt.Println("===\n\rGolang program to calculate the factorial of given number using for loop")
-	var factorialCandidate int
-	fmt.Println("Number to calculate the factorial for ... >")
-	fmt.Scan(&factorialCandidate)
+	factorialCandidate := 7
 	fmt.Printf("Factorial of %d is %d\n", factorialCandidate, loops.Factorial(factorialCandidate))
 
 	fmt.Println("===\n\rGolang program to calculate the power of a given number using the for loop")
-	var num, index int
-	fmt.Println("Enter the base and the power ... >")
-	fmt.Scan(&num, &index)
-	fmt.Printf("%d to the power %d is = %d", num, index, loops.Power(num, index))
+	num, index := 3, 4
+	fmt.Printf("%d to the power %d is = %d\n", num, index, loops.Power(num, index))
 
 	fmt.Println("===\n\rGolang program to calculate the reverse of the given number using the for loop")
 	reverseCandidate := 245
@@ -50,5 +43,13 @@ func main() {
 		fmt.Printf("yes the number %d is palindrome\n", palindromeCandidate)
 	} else {
 		fmt.Printf("No,  the number %d is not palindrome\n", palindromeCandidate)
+	}
+
+	fmt.Println("====\n\rGolang program to find the given number is armstrong or not using for loop")
+	armstrongCandidate := 153
+	if loops.IsArmstrong(armstrongCandidate) {
+		fmt.Printf("yes the number %d is armstrong\n", armstrongCandidate)
+	} else {
+		fmt.Printf("No,  the number %d is not armstrong \n", armstrongCandidate)
 	}
 }
