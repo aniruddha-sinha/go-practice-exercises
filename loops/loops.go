@@ -85,3 +85,30 @@ func IsArmstrong(num int) bool {
 		return false
 	}
 }
+
+func FibonacciSeries(limit int) {
+	var a, sum int
+	b := 1
+	fmt.Print(" ", a, " ", b, " ")
+	for i := 0; i < limit; i++ {
+		sum = a + b
+		a = b
+		b = sum
+		fmt.Print(b, " ")
+	}
+}
+
+func IsPrime(num int) bool {
+	var counter uint8
+	for i := 1; i <= num; i++ {
+		if num%i == 0 {
+			counter++
+		}
+	}
+
+	if counter == 2 {
+		return true
+	} else {
+		return false
+	}
+}

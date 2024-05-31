@@ -52,4 +52,20 @@ func main() {
 	} else {
 		fmt.Printf("No,  the number %d is not armstrong \n", armstrongCandidate)
 	}
+
+	fmt.Println("====\n\r Golang program to print Fibonacci series using for loop")
+	fiboLimit := 20
+	loops.FibonacciSeries(fiboLimit)
+
+	fmt.Println("====\n\r Golang program to check if given number is Prime or not")
+
+	numArr := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 13, 153, 163, 171}
+	fmt.Printf("INDEX\tNUMBER\tVERDICT\n\r")
+	for i, val := range numArr {
+		if loops.IsPrime(val) {
+			fmt.Printf("index=%d\tnum=%d\tverdict=%s\n\r", i, val, "Prime")
+		} else {
+			fmt.Printf("index=%d\tnum=%d\tverdict=%s\n\r", i, val, "Composite")
+		}
+	}
 }
