@@ -112,3 +112,45 @@ func IsPrime(num int) bool {
 		return false
 	}
 }
+
+func IsPerfect(num int) bool {
+	var sum int
+	for i := 1; i < num; i++ {
+		if num%i == 0 {
+			fmt.Println("i value = ", i)
+			sum += i
+		}
+	}
+
+	if num == sum {
+		return true
+	} else {
+		return false
+	}
+}
+
+func InfiniteLoop() {
+	for {
+		fmt.Println("Infitite Iterations")
+	}
+}
+
+func DemonstrateBreak() {
+	for i := 0; i < 20; i++ {
+		if i == 16 {
+			fmt.Println("Since the value of i is ", i, " therefore breaking from the for loop")
+			break
+		}
+	}
+}
+
+func DemonstrateContinue() {
+	for i := 0; i < 20; i++ {
+		if i == 16 || i == 18 || i > 4 && i < 10 {
+			fmt.Println("*******VALUE  SKIPPED***********")
+			continue
+		}
+
+		fmt.Println("The value of i is ", i)
+	}
+}
