@@ -11,4 +11,7 @@ import (
 func main() {
 	fmt.Println("LOOPS")
 	loopMainExecutor()
+
+	fmt.Println("Switch Case")
+	switchMainExecutor()
 }
