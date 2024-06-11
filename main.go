@@ -14,4 +14,7 @@ func main() {
 
 	fmt.Println("Switch Case")
 	switchMainExecutor()
+
+	fmt.Println("goto")
+	gotoMainExecutor()
 }
