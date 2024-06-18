@@ -13,5 +13,5 @@ func gotoMainExecutor() {
 	gotoprog.PrintTableUsingGoto(6)
 
 	fmt.Println("Print the hexadecimal representation of the numbers till 100")
-	gotoprog.PrintHexOfAllNumbersTill(40)
+	gotoprog.PrintHexOfAllNumbersTill(5)
 }

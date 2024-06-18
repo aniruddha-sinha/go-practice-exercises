@@ -17,4 +17,7 @@ func main() {
 
 	fmt.Println("goto")
 	gotoMainExecutor()
+
+	fmt.Println("Array")
+	arrayMainExecutor()
 }
