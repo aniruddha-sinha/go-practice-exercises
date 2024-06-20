@@ -14,4 +14,8 @@ func arrayMainExecutor() {
 	array.CompareArrays()
 	fmt.Println("=== Go program to find the sum of the element raised by its index value")
 	array.ComputeArrayPowerCounterSum()
+	fmt.Println("====Slicing a Slice")
+	array.SlicingASlice()
+	fmt.Println("====Deleting an element from a slice")
+	array.DeletingAnElemFromASlice()
 }
